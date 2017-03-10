@@ -127,7 +127,7 @@ for the Devil" by The Rolling Stones, "Lucifer Sam" by Pink Floyd, "Highway to
 
 # If set to true, uses udacity provided images from dropbox which have
 # aspect ratios and are smaller in size
-use_udacity_images = True
+use_udacity_images = False
 use_udacity_content = True
 
 
@@ -155,7 +155,7 @@ else:
             'sat.jpg', 'scape.jpg', 'shuttle.jpg', 'sky.jpg',
             'solar_system.jpg', 'sunset.jpg', 'vegas.jpg', 'whatever.jpg',
             'orange.jpg']
-    aspects_ratios = [-1] * len(names)
+    aspect_ratios = [-1] * len(names)
 
 if use_udacity_content:
     titles = ['Mysteries of the Universe Solved', 'A Flatiron State of Mind',
