@@ -128,13 +128,10 @@ for the Devil" by The Rolling Stones, "Lucifer Sam" by Pink Floyd, "Highway to
 # If set to true, uses udacity provided images from dropbox which have
 # aspect ratios and are smaller in size
 use_udacity_images = True
-use_udacity_content = False
+use_udacity_content = True
 
 
-base_url = (
-        "https://raw.githubusercontent.com/josecostamartins/dump/master/Lego",
-        "https://github.com/josecostamartins/dump/blob/master/Lego/images/")
-[use_udacity_images]
+base_url = "https://raw.githubusercontent.com/josecostamartins/dump/master/Lego/"
 
 photo_url = base_url + 'images/'
 thumb_url = base_url + 'thumbs/'
@@ -242,10 +239,11 @@ def test_endpoint():
 
 
 def main():
-    # construct_json();save()
+    construct_json()
+    save()
     # Make sure the changes are committed,pushed and about 30s are elapsed
     # else test will fail
-    test_endpoint()
+    # test_endpoint()
 
 if __name__ == '__main__':
     main()
