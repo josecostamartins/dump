@@ -155,7 +155,7 @@ else:
             'sat.jpg', 'scape.jpg', 'shuttle.jpg', 'sky.jpg',
             'solar_system.jpg', 'sunset.jpg', 'vegas.jpg', 'whatever.jpg',
             'orange.jpg']
-    aspect_ratios = [-1] * len(names)
+    aspect_ratios = [1] * len(names)
 
 if use_udacity_content:
     titles = ['Mysteries of the Universe Solved', 'A Flatiron State of Mind',
