@@ -1,4 +1,13 @@
 import requests, ast
+
+# Aspect_ratio stuff
+from PIL import Image
+
+
+def calculate_aspect_ratio(image_file):
+    size = Image.open(image_file).size
+    return round(size[0] / size[1], 2)
+
 '''
 data
 '''
@@ -155,7 +164,7 @@ else:
             'sat.jpg', 'scape.jpg', 'shuttle.jpg', 'sky.jpg',
             'solar_system.jpg', 'sunset.jpg', 'vegas.jpg', 'whatever.jpg',
             'orange.jpg']
-    aspect_ratios = [1] * len(names)
+    aspect_ratios = [calculate_aspect_ratio('images/' + x) for x in names]
 
 if use_udacity_content:
     titles = ['Mysteries of the Universe Solved', 'A Flatiron State of Mind',
