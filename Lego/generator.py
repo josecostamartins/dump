@@ -137,7 +137,7 @@ for the Devil" by The Rolling Stones, "Lucifer Sam" by Pink Floyd, "Highway to
 # If set to true, uses udacity provided images from dropbox which have
 # aspect ratios and are smaller in size
 use_udacity_images = False
-use_udacity_content = True
+use_udacity_content = False
 
 
 base_url = "https://raw.githubusercontent.com/josecostamartins/dump/master/Lego/"
